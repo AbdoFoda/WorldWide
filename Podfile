@@ -8,6 +8,7 @@ target 'worldWide' do
   pod 'Firebase/Core'
   pod 'Firebase/Database'
   pod 'Firebase/Auth'
+  pod 'Alamofire'
   # Pods for worldWide
 
 end

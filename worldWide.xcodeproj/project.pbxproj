@@ -8,25 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		2BF754AD21766BA100CC47B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF754AC21766BA100CC47B3 /* AppDelegate.swift */; };
-		2BF754AF21766BA100CC47B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF754AE21766BA100CC47B3 /* ViewController.swift */; };
+		2BF754AF21766BA100CC47B3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF754AE21766BA100CC47B3 /* LoginViewController.swift */; };
 		2BF754B221766BA100CC47B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BF754B021766BA100CC47B3 /* Main.storyboard */; };
-		2BF754B521766BA100CC47B3 /* worldWide.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2BF754B321766BA100CC47B3 /* worldWide.xcdatamodeld */; };
 		2BF754B721766BA300CC47B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BF754B621766BA300CC47B3 /* Assets.xcassets */; };
 		2BF754BA21766BA300CC47B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BF754B821766BA300CC47B3 /* LaunchScreen.storyboard */; };
 		2BF754C221766BF300CC47B3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2BF754C121766BF300CC47B3 /* GoogleService-Info.plist */; };
+		2BF754C52177D0DA00CC47B3 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF754C42177D0DA00CC47B3 /* Repository.swift */; };
+		2BF754C72177E64C00CC47B3 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF754C62177E64C00CC47B3 /* RegisterViewController.swift */; };
 		5057472554E941972B73E1D1 /* Pods_worldWide.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74292312B8559875E13E3B8E /* Pods_worldWide.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2BF754A921766BA100CC47B3 /* worldWide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = worldWide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BF754AC21766BA100CC47B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2BF754AE21766BA100CC47B3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2BF754AE21766BA100CC47B3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2BF754B121766BA100CC47B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		2BF754B421766BA100CC47B3 /* worldWide.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = worldWide.xcdatamodel; sourceTree = "<group>"; };
 		2BF754B621766BA300CC47B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2BF754B921766BA300CC47B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2BF754BB21766BA300CC47B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2BF754C121766BF300CC47B3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2BF754C42177D0DA00CC47B3 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		2BF754C62177E64C00CC47B3 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		74292312B8559875E13E3B8E /* Pods_worldWide.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_worldWide.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		747EF2D0FF63F0349945B67D /* Pods-worldWide.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-worldWide.release.xcconfig"; path = "Pods/Target Support Files/Pods-worldWide/Pods-worldWide.release.xcconfig"; sourceTree = "<group>"; };
 		76DCC8BA5DA152B82964B4A7 /* Pods-worldWide.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-worldWide.debug.xcconfig"; path = "Pods/Target Support Files/Pods-worldWide/Pods-worldWide.debug.xcconfig"; sourceTree = "<group>"; };
@@ -65,16 +67,25 @@
 		2BF754AB21766BA100CC47B3 /* worldWide */ = {
 			isa = PBXGroup;
 			children = (
-				2BF754AC21766BA100CC47B3 /* AppDelegate.swift */,
-				2BF754AE21766BA100CC47B3 /* ViewController.swift */,
-				2BF754C121766BF300CC47B3 /* GoogleService-Info.plist */,
 				2BF754B021766BA100CC47B3 /* Main.storyboard */,
-				2BF754B621766BA300CC47B3 /* Assets.xcassets */,
-				2BF754B821766BA300CC47B3 /* LaunchScreen.storyboard */,
+				2BF754AE21766BA100CC47B3 /* LoginViewController.swift */,
+				2BF754C62177E64C00CC47B3 /* RegisterViewController.swift */,
+				2BF754C42177D0DA00CC47B3 /* Repository.swift */,
+				2BF754C32177D03D00CC47B3 /* Options Files */,
+				2BF754C121766BF300CC47B3 /* GoogleService-Info.plist */,
 				2BF754BB21766BA300CC47B3 /* Info.plist */,
-				2BF754B321766BA100CC47B3 /* worldWide.xcdatamodeld */,
 			);
 			path = worldWide;
+			sourceTree = "<group>";
+		};
+		2BF754C32177D03D00CC47B3 /* Options Files */ = {
+			isa = PBXGroup;
+			children = (
+				2BF754B621766BA300CC47B3 /* Assets.xcassets */,
+				2BF754AC21766BA100CC47B3 /* AppDelegate.swift */,
+				2BF754B821766BA300CC47B3 /* LaunchScreen.storyboard */,
+			);
+			path = "Options Files";
 			sourceTree = "<group>";
 		};
 		5BE457773F8A04CE0984AD70 /* Pods */ = {
@@ -173,6 +184,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-worldWide/Pods-worldWide-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
@@ -182,6 +194,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
@@ -221,9 +234,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BF754AF21766BA100CC47B3 /* ViewController.swift in Sources */,
+				2BF754AF21766BA100CC47B3 /* LoginViewController.swift in Sources */,
 				2BF754AD21766BA100CC47B3 /* AppDelegate.swift in Sources */,
-				2BF754B521766BA100CC47B3 /* worldWide.xcdatamodeld in Sources */,
+				2BF754C52177D0DA00CC47B3 /* Repository.swift in Sources */,
+				2BF754C72177E64C00CC47B3 /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,19 +439,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		2BF754B321766BA100CC47B3 /* worldWide.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				2BF754B421766BA100CC47B3 /* worldWide.xcdatamodel */,
-			);
-			currentVersion = 2BF754B421766BA100CC47B3 /* worldWide.xcdatamodel */;
-			path = worldWide.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 2BF754A121766BA100CC47B3 /* Project object */;
 }
