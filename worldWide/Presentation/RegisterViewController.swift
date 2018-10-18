@@ -17,12 +17,17 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     
     
+    @IBOutlet weak var confirmPasswordTextField: UITextField!
     //MARK:- Outlet Action
     
     var waitingForResponse = false
     
     @IBAction func registerButtonTapped(_ sender: UIButton) {
         if waitingForResponse{
+            return
+        }
+        if passwordTextField.text! != confirmPasswordTextField.text!{
+            self.presentSimpleMessage(title: "Warning", message: "Password Mis-match")
             return
         }
         // the same mutex lock
