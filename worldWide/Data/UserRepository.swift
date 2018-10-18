@@ -9,7 +9,7 @@
 import Foundation
 import Firebase
 
-class Repository{
+class UserRepository{
     
     static func registerNewUser(withEmail email : String,
                              withPassword password:String ,

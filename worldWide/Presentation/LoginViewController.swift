@@ -27,11 +27,12 @@ class LoginViewController: UIViewController {
         DispatchQueue.global().sync {
             waitingForResponse = true
         }
-        Repository.loginUser(withEmail: emailTextField.text!, withPassword: passwordTextField.text!, success: { (_) in
-            self.performSegue(withIdentifier: "loginSegueID", sender: self)
+        UserRepository.loginUser(withEmail: emailTextField.text!, withPassword: passwordTextField.text!, success: { (_) in
             DispatchQueue.global().sync {
-                self.waitingForResponse = true
+                self.waitingForResponse = false
             }
+            self.performSegue(withIdentifier: "loginSegueID", sender: self)
+            
         }) { (error) in
             DispatchQueue.global().sync {
                 self.waitingForResponse = false

@@ -29,7 +29,7 @@ class RegisterViewController: UIViewController {
         DispatchQueue.global().sync {
             self.waitingForResponse = true
         }
-        Repository.registerNewUser(withEmail: emailTextField.text!, withPassword: passwordTextField.text!, success: { (user) in
+        UserRepository.registerNewUser(withEmail: emailTextField.text!, withPassword: passwordTextField.text!, success: { (user) in
             self.presentSimpleMessage(title: "Welcome", message: " A new Account has been created with email \(user.email!)"){ () in 
                 self.performSegue(withIdentifier: "loginSegueID", sender: self)
             }
